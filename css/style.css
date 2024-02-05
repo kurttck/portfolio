@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVEGADOR */
+
+header {
+  background-color: slategray;
+}
+
+header nav a {
+  padding: 10px;
+}
+
+.presentacion {
+  background-color: gray;
+}
+
+.presentacion .pre2 {
+  border: solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin: 50px;
+  height: 80%;
+}
+
+.presentacion .pre2 .presentacion_card {
+  display: inline-block;
+  border: solid 1px red;
+  /* height: 30px; */
+  margin: 5%;
+  padding: 2%;
+}
+
+.presentacion .pre2 .presentacion_card img {
+  width: 100%;
+  height: auto;
+}
+
+/* PROYECTOS */
+
+.proyect {
+  background-color: bisque;
+}
+
+.proyect .content_proyect {
+}
+.proyect .content_proyect section {
+  display: inline-block;
+  border: solid 2px blue;
+  margin: 5%;
+  padding: 2%;
+}
+
+/* EXPERIENCIA */
+
+.exp {
+  background-color: brown;
+}
+
+
+.exp .content_exp section {
+  display: inline-block;
+  border: solid 2px black;
+  margin: 5%;
+  padding: 2%;
+}
+
+
+/* CURIOSIDADES */
+
+.curio{
+    background-color: aquamarine;
+}
+
+.curio details .card_curio .content_curio{
+    display: inline-flexbox;
+    border: solid 2px black;
+}
+.content_curio img{
+    width: 30%;
+    height: auto;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    background-color: blueviolet;
+}
+
+.formulario .content_formulario{
+    padding: 3%;
+}
+
+.formulario .content_formulario fieldset{
+   width: 500px;
+}
+
+.formulario .content_formulario div{
+    padding: 1%;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: burlywood;
+}
