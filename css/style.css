@@ -6,6 +6,10 @@
   font-size: 18px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .center {
   align-items: center;
   display: flex;
@@ -13,9 +17,8 @@
 }
 
 body {
-  background: gray;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #eceff1;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* NAVEGADOR */
@@ -172,47 +175,130 @@ body {
   /* background-color: gray; */
 }
 
-.presentacion .pre2 {
-  border: solid black;
+.presentacion .pre2 {/* 
+  border: solid black; */
   border-radius: 10px;
-  width: 50%;
+  width:70%;
   margin: 50px;
-  height: 80%;
 }
 
 .presentacion .pre2 .presentacion_card {
   display: inline-block;
-  border: solid 1px red;
-  /* height: 30px; */
+  
+  /* height: 100%; */
   margin: 5%;
   padding: 2%;
 }
 
-.presentacion .pre2 .presentacion_card img {
-  width: 100%;
-  height: auto;
+.presentacion .pre2 button a{
+  color: #eceff1;
+  text-decoration: none;
 }
+
+
+
+ .button{
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color:#eceff1;
+  background-color: #1b3039;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.button:hover{
+  
+  transform: scale(1.1);
+}
+
+
+
+
+.presentacion .pre2 .presentacion_card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+}
+
+
+
+
+
+
+
 
 /* PROYECTOS */
 
-.proyect {
-  /* background-color: bisque; */
+#proyect{
+  background-color: #1b3039;
+  color: #eceff1;
+  text-align: center;
 }
 
-.proyect .content_proyect {
+#proyect .container{
+  padding: 100px 0px;
+
 }
-.proyect .content_proyect section {
-  display: inline-block;
-  border: solid 2px blue;
-  margin: 5%;
-  padding: 2%;
+
+#proyect .card{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
 }
+
+.card:first-child{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("image/tai.png");
+}
+
+.card:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("image/yo.png");
+}
+
+.card:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url("image/logo.png");
+}
+
+#proyect .proyectos{
+  display: flex;
+  justify-content: center;
+
+}
+
+#proyect img{
+  margin: 20px 0px;
+  height: 50px;
+}
+
+#proyect .card{
+  padding: 15px;
+}
+
+#proyect .proyect-banner{
+  height: 500px;
+}
+
 
 /* EXPERIENCIA */
-
-/* .exp {
-  background-color: brown;
-} */
 
 .exp .content_exp section {
   display: inline-block;
@@ -256,5 +342,16 @@ body {
 
 /* FOOTER */
 footer {
-  background-color: slategray;
+  
+  background-color: #1b3039;
+}
+
+footer .container p{
+ color: #eceff1;
+}
+
+
+.container{
+  max-width: 1400px;
+  margin: auto;
 }

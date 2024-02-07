@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#09f" />
     <!-- Cambia el color de la parte superior donde se pone el link -->
-    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link rel="icon" type="image/png" href="image/logo.png" />
     <meta
       name="description"
       content="Portfolio Kurt Angeles, Programador junior en frontend y backend"
@@ -17,7 +17,7 @@
     <!-- OPEN GRAPH: Etiquetas para configurar la vista en el momento de compartir en redes sociales -->
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
-    <meta property="og:image" content="image/favicon.png" />
+    <meta property="og:image" content="image/logo.png" />
 
     <!-- SEO -->
     <link rel="alternate" href="" />
@@ -35,27 +35,27 @@
       <nav>
         <ul class="nav-link center">
           <li><a href="#presentacion">Presentacion</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#proyect">Proyectos</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
           <li><a href="#curiosidades">Curiosidades</a></li>
         </ul>
       </nav>
       <a href="#contacto" class="btn-header"><button>Contacto</button></a>
 
-      <a href="#" class="menu btn-header" onclick="openNav()"><button>Menu</button></a>
+      <a href="#" class="menu btn-header" onclick="openNav()"
+        ><button>Menu</button></a
+      >
 
       <div class="overlay" id="menu-mobile">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
           <a onclick="closeNav()" href="#presentacion">Presentacion</a>
-          <a onclick="closeNav()" href="#proyectos">Proyectos</a>
+          <a onclick="closeNav()" href="#proyect">Proyectos</a>
           <a onclick="closeNav()" href="#experiencia">Experiencia</a>
           <a onclick="closeNav()" href="#curiosidades">Curiosidades</a>
           <a onclick="closeNav()" href="#contacto">Contacto</a>
         </div>
-         </div>
-
-
+      </div>
     </header>
 
     <main>
@@ -65,18 +65,61 @@
           <div class="presentacion_card">
             <img src="image/yo.jpeg" alt="Kurt Sonriendo xd" />
           </div>
-          <div class="presentacion_card">
+          <div>
+            <h1>Hola, Soy Kurt. ✋</h1>
+            <br />
             <p>
-              Hola mi nombre es Kurt Angeles y me gusta one piece. Tengo un año
-              de experiencia programando y manejando base de datos en SQL y
-              Mysql Tambien manejo un poco de HTML, CSS y Javascript. proativo y
-              trabaja bajo presión. gracias
+              Desarrollador Frontend <br />
+              That loves creating web apps.
             </p>
-            <button>Descargar CV</button>
+            <br />
+            <button class="button">
+              <a download="cv" href="cv.pdf">Descargar CV</a>
+            </button>
+            <a href="">github</a>
+            <a href="">IG</a>
+            <a href="">linkenind</a>
           </div>
         </div>
       </article>
-      <article id="proyectos" class="proyect">
+
+      <section id="proyect">
+
+        <div class="container">
+          <h2>Mis Proyectos</h2>
+
+          <div class="proyectos center">
+            <div class="card">
+              <h3>Pokeapp</h3>
+
+              <img class="proyect-banner" src="image/tai.png" alt="sadasdas">
+
+              
+              <div class="tecnologias">
+                <img src="image/html.png" alt="" />
+              </div>
+              <button class="button">+Info</button>
+            </div>
+            <div class="card">
+              <h3>Calculadora</h3>
+              <img class="proyect-banner" src="image/tai.png" alt="sadasdas">
+              <div class="tecnologias">
+                <img src="image/html.png" alt="" />
+              </div>
+              <button class="button">+Info</button>
+            </div>
+            <div class="card">
+              <h3>CRUD</h3>
+              <img class="proyect-banner" src="image/tai.png" alt="sadasdas">
+              <div class="tecnologias">
+                <img src="image/html.png" alt="" />
+              </div>
+              <button class="button">+Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <article id="proyectos" class="proyect">
         <h2 class="center">Todos mis Proyectos</h2>
         <div class="content_proyect center">
           <section>
@@ -95,7 +138,7 @@
             <button>Ver</button>
           </section>
         </div>
-      </article>
+      </article> -->
 
       <aside id="experiencia" class="exp">
         <h2 class="center">Experiencia en cada lenguaje</h2>
@@ -191,8 +234,12 @@
         </div>
       </section>
     </main>
-    <footer class="center">COPYRIGHT° 2023 - KURT ANGELES SEGURA.</footer>
-    
+    <footer class="center">
+      <div class="container">
+        <p>&copy; Kurt Angeles 2024</p>
+      </div>
+    </footer>
+
     <script type="text/Javascript" src="js/nav.js"></script>
   </body>
 </html>
