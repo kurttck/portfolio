@@ -91,7 +91,7 @@ body {
 
 .header .btn-header button:hover{
   background-color: #eceff1;
-  color: #e5b026;
+  
   transform: scale(1.1);
 }
 /* PRESENTACION */
