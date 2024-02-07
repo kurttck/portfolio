@@ -25,24 +25,24 @@
     <!-- Cual es la pagina original -->
   </head>
   <body>
-    <header class="center">
+    <header class="header center">
       <!-- <h1 class="center">Portfolio Kurt Angeles ö</h1> -->
-     
+      <div class="logo center">
+        <img src="image/logo.png" alt="" />
+        <p>Kurt <br />Angeles</p>
+      </div>
+
       <nav>
         <ul class="nav-link center">
           <li><a href="#presentacion">Presentacion</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
           <li><a href="#curiosidades">Curiosidades</a></li>
-          <li><a href="https://www.youtube.com/" target="_blank" rel="noreferrer"
-            >Youtube</a
-          ></li>
-          <li><a href=""><button>Contacto</button></a></li>
         </ul>
-        
       </nav>
-      
+      <a href="" class="btn-header"><button>Contacto</button></a>
     </header>
+
     <main>
       <!-- LO QUE HACE UNICO A LA PAGINA Y SOLO PUEDE HABER UNO EN TODA LA PAG -->
       <article id="presentacion" class="presentacion center">
@@ -82,7 +82,6 @@
         </div>
       </article>
 
-      
       <aside id="experiencia" class="exp">
         <h2 class="center">Experiencia en cada lenguaje</h2>
         <div class="content_exp center">
@@ -104,27 +103,20 @@
       <section id="curiosidades" class="curio">
         <h2 class="center">Curiosidades</h2>
 
-
-
-
         <details>
           <summary>Como no todo es programar</summary>
           <div class="card_curio">
-          <div class="content_curio">
-            <p>
-              Tengo una banda que se llama "Terapia de Amor intensiva" la cual
-              hacemos musica indie
-            </p>
+            <div class="content_curio">
+              <p>
+                Tengo una banda que se llama "Terapia de Amor intensiva" la cual
+                hacemos musica indie
+              </p>
+            </div>
+            <div class="content_curio">
+              <img src="image/tai.png" alt="terapia de amor intensiva" />
+            </div>
           </div>
-          <div class="content_curio">
-            <img src="image/tai.png" alt="terapia de amor intensiva" />
-          </div>
-        </div>
         </details>
-
-
-
-
 
         <details>
           <summary>Como no todo es programar</summary>
@@ -148,40 +140,40 @@
         <h2 class="center">Formulario de Contacto</h2>
 
         <div class="content_formulario center">
-        <form method="post" action="">
-          <fieldset>
-            <legend>Información personal</legend>
+          <form method="post" action="">
+            <fieldset>
+              <legend>Información personal</legend>
 
-            <div>
-              <label
-                >Nombres y Apellidos:
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Kurt Angeles Segura"
-                />
-              </label>
-            </div>
-            <div>
-              <label
-                >Telefono:
-                <input type="tel" name="tel" placeholder="+51 99999999" />
-              </label>
-            </div>
-            <div>
-              <label
-                >Correo:
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="example@gmail.com"
-                />
-              </label>
-            </div>
-            <button>Solicitar</button>
-          </fieldset>
-        </form>
-    </div>
+              <div>
+                <label
+                  >Nombres y Apellidos:
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Kurt Angeles Segura"
+                  />
+                </label>
+              </div>
+              <div>
+                <label
+                  >Telefono:
+                  <input type="tel" name="tel" placeholder="+51 99999999" />
+                </label>
+              </div>
+              <div>
+                <label
+                  >Correo:
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                  />
+                </label>
+              </div>
+              <button>Solicitar</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="center">COPYRIGHT° 2023 - KURT ANGELES SEGURA.</footer>
