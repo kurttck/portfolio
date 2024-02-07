@@ -40,7 +40,22 @@
           <li><a href="#curiosidades">Curiosidades</a></li>
         </ul>
       </nav>
-      <a href="" class="btn-header"><button>Contacto</button></a>
+      <a href="#contacto" class="btn-header"><button>Contacto</button></a>
+
+      <a href="#" class="menu btn-header" onclick="openNav()"><button>Menu</button></a>
+
+      <div class="overlay" id="menu-mobile">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a onclick="closeNav()" href="#presentacion">Presentacion</a>
+          <a onclick="closeNav()" href="#proyectos">Proyectos</a>
+          <a onclick="closeNav()" href="#experiencia">Experiencia</a>
+          <a onclick="closeNav()" href="#curiosidades">Curiosidades</a>
+          <a onclick="closeNav()" href="#contacto">Contacto</a>
+        </div>
+         </div>
+
+
     </header>
 
     <main>
@@ -136,7 +151,7 @@
         </details>
       </section>
 
-      <section class="formulario">
+      <section class="formulario" id="contacto">
         <h2 class="center">Formulario de Contacto</h2>
 
         <div class="content_formulario center">
@@ -177,5 +192,7 @@
       </section>
     </main>
     <footer class="center">COPYRIGHT° 2023 - KURT ANGELES SEGURA.</footer>
+    
+    <script type="text/Javascript" src="js/nav.js"></script>
   </body>
 </html>
