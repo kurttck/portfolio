@@ -44,7 +44,11 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <a href="#contacto" class="btn-header"><button>Contacto</button></a>
+      <div>
+        <a href="#contacto" class="btn-header"><button>Contacto</button></a>|
+
+      </div>
+      
 
       <a href="#" class="menu btn-header" onclick="openNav()"
         ><button>Menu</button></a
@@ -101,6 +105,9 @@
         </div>
       </article>
 
+
+<!--       ----------------------------------------------------- SOBRE MI ------------------------------------------- -->
+
       <section id="about" class="center">
         <div class="container informacion">
           <div class="about">
@@ -126,7 +133,7 @@
             </div>
             <div class="skills">
               <h2>Skills</h2>
-              <div class="center">
+              <div class="center skills-img">
                 <div>
                   <img src="image/html.png" alt="" />
                   <p>HTML5</p>
@@ -149,11 +156,13 @@
         </div>
       </section>
 
+<!--------------------------------------------------------- PROYECTOS ---------------------------------------------------- -->
+
       <section id="proyect">
         <div class="container">
           <h2>Proyectos</h2>
 
-          <div class="proyectos center">
+          <div class="proyectos">
             <div class="card">
               <h3>Pokeapp</h3>
 
@@ -165,13 +174,17 @@
 
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
+                <img src="image/css.png" alt="">
+                <img src="image/js.png" alt="">
               </div>
+              <div class="proyect-link">
               <a
                 href="https://github.com/kurttck"
                 class="fa-brands fa-github"
                 target="_blank"
               ></a>
               <a href="" class="fa-solid fa-globe"></a>
+            </div>
             </div>
             <div class="card">
               <h3>Calculadora</h3>
@@ -183,12 +196,14 @@
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
               </div>
+              <div class="proyect-link">
               <a
                 href="https://github.com/kurttck"
                 class="fa-brands fa-github"
                 target="_blank"
               ></a>
               <a href="" class="fa-solid fa-globe"></a>
+            </div>
             </div>
             <div class="card">
               <h3>CRUD</h3>
@@ -200,6 +215,7 @@
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
               </div>
+              <div class="proyect-link">
               <a
                 href="https://github.com/kurttck"
                 class="fa-brands fa-github"
@@ -207,24 +223,70 @@
               ></a>
               <a href="" class="fa-solid fa-globe"></a>
             </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="formulario" id="contacto">
-        <div class="container center">
-          <div>
+        <div class="container center contac_container">
+          <div class="contacto">
             <h2>Contacto</h2>
             <p>Don't be shy, and leave me a message :)</p>
+
+            <div>
+              <p>
+                <i class="fa-solid fa-envelope"></i>kurttck7034@gmail.com<br />
+                <i class="fa-solid fa-phone"></i>+51 947645083 <br />
+                <i class="fa-solid fa-map-location-dot"></i>Lima - Perú
+              </p>
+            </div>
 
             <a
               href="https://www.linkedin.com/in/kurt-angeles-segura-570b23239/"
               class="fa-brands fa-linkedin"
               target="_blank"
             ></a>
+            <a
+              href="https://www.instagram.com/kurt.a.s/"
+              class="fa-brands fa-instagram"
+              target="_blank"
+            ></a>
           </div>
+
           <div class="content_formulario center">
-            <form method="post" action="">
+            <form action="">
+              <div class="input-group">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nombre"
+                  required
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="name"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="5"
+                  placeholder="Mensaje"
+                  required
+                ></textarea>
+                <input class="button" type="submit" value="Enviar" />
+              </div>
+            </form>
+
+            <!-- <form method="post" action="">
               <fieldset>
                 <legend>Escribeme</legend>
 
@@ -260,7 +322,7 @@
                 </div>
                 <button class="button">Solicitar</button>
               </fieldset>
-            </form>
+            </form> -->
           </div>
         </div>
       </section>

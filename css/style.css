@@ -143,27 +143,7 @@ body {
   display: none;
 }
 
-@media screen and (max-height: 450px) {
-  .header .overlay a {
-    font-size: 20px;
-  }
 
-  .header .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .nav-link,
-  .btn-header {
-    display: none;
-  }
-  .menu {
-    display: inherit;
-  }
-}
 
 /*---------------------------------------------- PRESENTACION ---------------------------------------------------*/
 
@@ -175,7 +155,6 @@ body {
     ),
     url(../image/banner2.png);
   background-size: cover;
-
   height: 500px;
 }
 
@@ -220,7 +199,7 @@ body {
 
 .presentacion .pre2 .presentacion_card img {
   border-radius: 10px;
-  width: 100%;
+  width: auto;
   height: 350px;
 }
 
@@ -280,12 +259,18 @@ body {
   align-items: center;
 }
 
-#about .informacion .skills-educacion .skills div {
-  margin: 5px;
-  width: auto;
+#about .skills h2 {
+  margin-left: 21px;
+}
+
+#about .skills-img div {
+  margin-top: 5px;
+  text-align: center;
+  width: 90px;
 }
 
 #about .informacion .skills-educacion .skills p {
+  text-align: center;
   font-size: 15px;
 }
 
@@ -351,19 +336,67 @@ body {
 /*----------------------------------------------- CONTACTO ------------------------------------------------- */
 
 #contacto a {
-  color: black;
+  color: #1b3039;
 }
 
-.formulario .content_formulario {
-  padding: 3%;
+#contacto i {
+  color: #1b3039;
+  font-size: 15px;
 }
 
-.formulario .content_formulario fieldset {
-  width: 500px;
+#contacto .contacto h2 {
+  font-size: 30px;
 }
 
-.formulario .content_formulario div {
-  padding: 1%;
+#contacto .contacto div {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+#contacto .contacto p {
+  font-size: 15px;
+}
+
+form {
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: #0e191c;
+  margin: 70px;
+}
+
+form .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form label {
+  color: #eceff1;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+form input,
+textarea {
+  padding: 4px 15px;
+  border-radius: 5px;
+  border: 0px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 15px;
+  background-color: #1b3039;
+  color: #eceff1;
+  resize: none;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  color: #eceff1;
+  font-size: 14px;
 }
 
 /* -------------------------------------------- FOOTER ---------------------------------------------------- */
@@ -383,4 +416,99 @@ footer .container p {
 .container {
   max-width: 1400px;
   margin: auto;
+}
+
+/* -------------------------------------------------- RESPONSIVE ---------------------------------------- */
+
+
+
+
+@media screen and (max-height: 500px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+  
+  .nav-link,
+  .btn-header {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+  
+  .tecnologias{
+    display: none;
+  }
+
+  #proyect .proyectos{
+    display: block;
+  }
+
+  #proyect .proyect-banner {
+    width: 300px;
+    height: auto;
+  }
+
+
+
+
+  /* -------------------------- responsive about ---------------------------------------- */
+
+  #about .skills h2 {
+    text-align: center;
+  }
+
+  #about .skills-educacion {
+    display: block;
+    margin-top: 20px;
+  }
+
+  #about .container .about{
+    text-align: center;
+  }
+
+  #about .informacion .skills-educacion{
+    text-align: center;
+  }
+
+  #about .informacion .skills-educacion .estudios{
+    margin: 30px 0px;
+  }
+
+  #about .skills-educacion ul li:first-child {
+    list-style-type: none;
+  }
+
+  #about .informacion .skills-educacion .skills {
+    margin-left: 0px;
+  }
+  
+
+/*   ---------------------------------- respondive contacto ------------------------------------ */
+
+  #contacto .contac_container{
+    display: block;
+  }
+
+  #contacto .contacto{
+    text-align: center;
+  }
+
+  #contacto{
+    margin-top: 40px;
+  }
+
+
 }
