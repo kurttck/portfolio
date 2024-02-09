@@ -39,9 +39,9 @@
       <nav>
         <ul class="nav-link center">
           <li><a href="#presentacion">Presentación</a></li>
+          <li><a href="#about">Sobre Mí</a></li>
           <li><a href="#proyect">Proyectos</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
       <a href="#contacto" class="btn-header"><button>Contacto</button></a>
@@ -54,9 +54,8 @@
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
           <a onclick="closeNav()" href="#presentacion">Presentacion</a>
+          <a onclick="closeNav()" href="#about">Sobre mi</a>
           <a onclick="closeNav()" href="#proyect">Proyectos</a>
-          <a onclick="closeNav()" href="#experiencia">Experiencia</a>
-          <a onclick="closeNav()" href="#curiosidades">Curiosidades</a>
           <a onclick="closeNav()" href="#contacto">Contacto</a>
         </div>
       </div>
@@ -102,6 +101,54 @@
         </div>
       </article>
 
+      <section id="about" class="center">
+        <div class="container informacion">
+          <div class="about">
+            <h1>About</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum in modi quaerat ducimus illo rem deserunt, quibusdam
+              perferendis delectus aliquid hic autem voluptatibus tempore ut
+              doloremque placeat nam facere adipisci.
+            </p>
+          </div>
+
+          <div class="skills-educacion">
+            <div class="estudios">
+              <h2>Educación:</h2>
+              <div>
+                <ul>
+                  <li>Computacion e Informatica</li>
+                  <li>IEST CEPEA</li>
+                  <li>2019-2023</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills">
+              <h2>Skills</h2>
+              <div class="center">
+                <div>
+                  <img src="image/html.png" alt="" />
+                  <p>HTML5</p>
+                </div>
+                <div>
+                  <img src="image/css.png" alt="" />
+                  <p>CSS</p>
+                </div>
+                <div>
+                  <img src="image/js.png" alt="" />
+                  <p>JavaScript</p>
+                </div>
+                <div>
+                  <img src="image/react.png" alt="" />
+                  <p>React</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="proyect">
         <div class="container">
           <h2>Proyectos</h2>
@@ -119,7 +166,12 @@
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
               </div>
-              <button class="button">+Info</button>
+              <a
+                href="https://github.com/kurttck"
+                class="fa-brands fa-github"
+                target="_blank"
+              ></a>
+              <a href="" class="fa-solid fa-globe"></a>
             </div>
             <div class="card">
               <h3>Calculadora</h3>
@@ -131,7 +183,12 @@
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
               </div>
-              <button class="button">+Info</button>
+              <a
+                href="https://github.com/kurttck"
+                class="fa-brands fa-github"
+                target="_blank"
+              ></a>
+              <a href="" class="fa-solid fa-globe"></a>
             </div>
             <div class="card">
               <h3>CRUD</h3>
@@ -143,113 +200,77 @@
               <div class="tecnologias">
                 <img src="image/html.png" alt="" />
               </div>
-              <button class="button">+Info</button>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-
-      <aside id="experiencia" class="exp">
-        <h2 class="center">Experiencia en cada lenguaje</h2>
-        <div class="content_exp center">
-          <section>
-            <h3>HTML</h3>
-            <img src="" alt="" />
-          </section>
-          <section>
-            <h3>CSS</h3>
-            <img src="" alt="" />
-          </section>
-          <section>
-            <h3>Javascript</h3>
-            <img src="" alt="" />
-          </section>
-        </div>
-      </aside>
-
-      <section id="curiosidades" class="curio">
-        <h2 class="center">Curiosidades</h2>
-
-        <details>
-          <summary>Como no todo es programar</summary>
-          <div class="card_curio">
-            <div class="content_curio">
-              <p>
-                Tengo una banda que se llama "Terapia de Amor intensiva" la cual
-                hacemos musica indie
-              </p>
-            </div>
-            <div class="content_curio">
-              <img src="image/tai.png" alt="terapia de amor intensiva" />
+              <a
+                href="https://github.com/kurttck"
+                class="fa-brands fa-github"
+                target="_blank"
+              ></a>
+              <a href="" class="fa-solid fa-globe"></a>
             </div>
           </div>
-        </details>
-
-        <details>
-          <summary>Como no todo es programar</summary>
-          <p>
-            Tengo una banda que se llama "Terapia de Amor intensiva" la cual
-            hacemos musica indie
-          </p>
-          <img src="image/tai.png" alt="terapia de amor intensiva" />
-        </details>
-        <details>
-          <summary>Como no todo es programar</summary>
-          <p>
-            Tengo una banda que se llama "Terapia de Amor intensiva" la cual
-            hacemos musica indie
-          </p>
-          <img src="image/tai.png" alt="terapia de amor intensiva" />
-        </details>
+        </div>
       </section>
 
       <section class="formulario" id="contacto">
-        <h2 class="center">Formulario de Contacto</h2>
+        <div class="container center">
+          <div>
+            <h2>Contacto</h2>
+            <p>Don't be shy, and leave me a message :)</p>
 
-        <div class="content_formulario center">
-          <form method="post" action="">
-            <fieldset>
-              <legend>Información personal</legend>
+            <a
+              href="https://www.linkedin.com/in/kurt-angeles-segura-570b23239/"
+              class="fa-brands fa-linkedin"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="content_formulario center">
+            <form method="post" action="">
+              <fieldset>
+                <legend>Escribeme</legend>
 
-              <div>
-                <label
-                  >Nombres y Apellidos:
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Kurt Angeles Segura"
-                  />
-                </label>
-              </div>
-              <div>
-                <label
-                  >Telefono:
-                  <input type="tel" name="tel" placeholder="+51 99999999" />
-                </label>
-              </div>
-              <div>
-                <label
-                  >Correo:
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="example@gmail.com"
-                  />
-                </label>
-              </div>
-              <button>Solicitar</button>
-            </fieldset>
-          </form>
+                <div>
+                  <label
+                    >Nombres:
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Kurt Angeles Segura"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <label
+                    >Correo:
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="example@gmail.com"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <label for=""
+                    >Mensaje:
+                    <input
+                      type="textarea"
+                      name="mensaje"
+                      placeholder="Mensaje"
+                    />
+                  </label>
+                </div>
+                <button class="button">Solicitar</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="center">
-      <div class="container">
+
+    <footer class="footer">
+      <div class="container copyrigth">
         <p>&copy; Kurt Angeles 2024</p>
       </div>
     </footer>
-
     <script type="text/Javascript" src="js/nav.js"></script>
   </body>
 </html>
