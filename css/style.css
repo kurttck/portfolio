@@ -467,6 +467,7 @@ footer .container p {
   /* -------------------------- responsive about ---------------------------------------- */
 
   #about .skills h2 {
+    margin-left: 0px;
     text-align: center;
   }
 
